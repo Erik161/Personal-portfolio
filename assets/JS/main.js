@@ -11,3 +11,24 @@ const showmMenu = (toggleId, navId)=>{
 }
 
 showmMenu('nav_toggle','nav-menu')
+
+
+/*=========    ACTIVE AND REMOVE MENU  ============*/
+
+const navLink = document.querySelectorAll('.nav_link')
+
+    function linkAction(){
+        //Active Link
+        navLink.forEach(n => n.classList.remove('active'))
+        this.classList.add('active')
+        //remove menu mobile
+        const navMenu = document.getElementById('nav-menu')
+        navMenu.classList.remove('show')
+
+}
+
+
+
+/*=========  17:15 me quede en el Video============*/
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
