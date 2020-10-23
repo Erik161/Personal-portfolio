@@ -24,11 +24,7 @@ const navLink = document.querySelectorAll('.nav_link')
         //remove menu mobile
         const navMenu = document.getElementById('nav-menu')
         navMenu.classList.remove('show')
-
 }
 
 
 
-/*=========  17:15 me quede en el Video============*/
-
-navLink.forEach(n => n.addEventListener('click', linkAction))
