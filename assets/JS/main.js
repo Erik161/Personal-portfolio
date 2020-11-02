@@ -13,6 +13,7 @@ const showmMenu = (toggleId, navId)=>{
 showmMenu('nav_toggle','nav-menu')
 
 
+
 /*=========    ACTIVE AND REMOVE MENU  ============*/
 
 const navLink = document.querySelectorAll('.nav_link')
@@ -25,6 +26,4 @@ const navLink = document.querySelectorAll('.nav_link')
         const navMenu = document.getElementById('nav-menu')
         navMenu.classList.remove('show')
 }
-
-
 
